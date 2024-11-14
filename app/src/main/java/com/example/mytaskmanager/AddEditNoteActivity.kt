@@ -21,7 +21,7 @@ class AddEditNoteActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_edit_task)
+        setContentView(R.layout.create_task)
 
         // on below line we are initializing our view modal.
         viewMod = ViewModelProvider(
