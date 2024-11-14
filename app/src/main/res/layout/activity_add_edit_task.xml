@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEditNoteActivity">
+
+
+    <TextView
+        android:id="@+id/AddTxtView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Adicionar Tarefa"
+        android:textColor="@color/blue_sky"
+        android:textSize="25sp" />
+
+
+    <ImageView
+        android:id="@+id/save_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_done"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/AddTxtView"
+        android:layout_marginEnd="6dp"/>
+
+
+    <EditText
+        android:id="@+id/idEdit_Title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/AddTxtView"
+        android:layout_margin="6dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_view"
+        android:fontFamily="sans-serif"
+        android:hint="Digite Nova Tarefa"
+        android:padding="12dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/idEdit_Desc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:layout_below="@id/idEdit_Title"
+        android:layout_marginTop="12dp"
+        android:gravity="top"
+        android:padding="12dp"
+        android:hint="Digite Discripção da Tarefa"
+        android:textSize="18sp"
+        android:background="@drawable/border_view"
+       />
+
+
+</RelativeLayout>
